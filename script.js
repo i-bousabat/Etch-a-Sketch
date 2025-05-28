@@ -1,7 +1,7 @@
 let gridDimention = 16;// for example = 16
 
 const gridSize = 16; //example
-const container = document.querySelector('.container0');
+const container = document.querySelector('.container');
 
 for (let i = 0; i < gridSize; i++) {
     const row = document.createElement('div');
@@ -16,5 +16,11 @@ for (let i = 0; i < gridSize; i++) {
     container.appendChild(row);
 }
 
-square.
+container.addEventListener('mouseover', (e) => {
+    if (e.target.classList.contains('square')) {
+        e.target.style.backgroundColor = 'blue';
+    }
+    
+
+})
 
