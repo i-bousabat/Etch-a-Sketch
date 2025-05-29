@@ -16,7 +16,6 @@ clearButton.addEventListener('click', (e) => {
 //allow user to change dimentions of grid
 button.addEventListener('click', (e) => {
     let inputValue = Number(input.value);
-    alert(inputValue);
     if (!Number.isInteger(inputValue) || 
     inputValue > 100 ||
     inputValue < 1) {
